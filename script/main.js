@@ -1,7 +1,7 @@
 //Este array va a contener la(s) cotizacione(s) que genere el usuario
 let myQuotes = [];
 
-let searchcities = ""
+let searchCities = ""
 const lowPrice = "300 pesos";
 const mediumPrice = "600 pesos";
 const maxPrice = "1000 pesos";
@@ -46,11 +46,11 @@ class Quote {
 //Función para ingresar a las diferentes opciones de la pagina
 function dataCustomer() {
     let actionsCustomer = 0;
-    actionsCustomer = prompt("Para cotizar un envío ingrese 1, para salir presione 3");
+    actionsCustomer = prompt("Para cotizar un envío ingrese 1, para salir ingrese 3");
     while (actionsCustomer >= 0) {
         if (actionsCustomer == 1) {
             newQuote();
-            actionsCustomer = prompt("Para cotizar otro envío ingrese 1, para imprimir sus cotizaciones presione 2, para salir presione 3");
+            actionsCustomer = prompt("Para cotizar otro envío ingrese 1, para imprimir sus cotizaciones ingrese 2, para salir ingrese 3");
         }
         else if (actionsCustomer == 2) {
             displayQuotes(myQuotes);
@@ -62,20 +62,20 @@ function dataCustomer() {
         }
         else {
             alert("Usted introdujo una opción no válida");
-            actionsCustomer = prompt("Para cotizar un envío ingrese 1, para cualquier otra transacción ingrese 2, para salir presione 3");
+            actionsCustomer = prompt("Para cotizar un envío ingrese 1, para cualquier otra transacción ingrese 2, para salir ingrese 3");
         }
     }
 }
 
 //Función que permite solicitar los datos del cliente y realizar una cotización
 function newQuote() {
-    searchcities = prompt("A cotinuación ingrese la ciudad desde donde se enviará el producto: " + listCities()); 
-    let originCity = this.searchCity(searchcities);
+    searchCities = prompt("A cotinuación ingrese la ciudad desde donde se enviará el producto: " + listCities()); 
+    let originCity = this.searchCity(searchCities);
     let originStreet = prompt("Ingrese calle desde donde se enviará el producto");
     let originStreetNumber = prompt("Ingrese numero de calle desde donde se enviará el producto");
     let originPostalCode = prompt("Ingrese codigo postal desde donde se enviará el producto");
-    searchcities = prompt("Ingrese ciudad a donde se enviará el producto " + listCities()); 
-    let destinationCity = this.searchCity(searchcities);
+    searchCities = prompt("Ingrese ciudad a donde se enviará el producto " + listCities()); 
+    let destinationCity = this.searchCity(searchCities);
     let destinationStreet = prompt("Ingrese calle de destino del producto");
     let destinationStreetNumber = prompt("Ingrese numero de calle de destino del producto");
     let destinationPostalCode = prompt("Ingrese codigo postal de destino del producto");
@@ -88,7 +88,7 @@ function newQuote() {
         aforoProduct(weightProduct, heightProduct, widthProduct);
     }
     else {
-        alert("Los datos ingresados no son validos");
+        alert("Los datos ingresados no son válidos");
         dataCustomer();
     };
 
@@ -115,14 +115,13 @@ function newQuote() {
 function searchCity (searchCity){
     let city = CITIES.find((oneCity) => oneCity.name === searchCity.toUpperCase());
     if(city){
-        let costumerCity = city.name;
-        console.log(costumerCity)
-        return costumerCity;
+        let customerCity = city.name;
+        return customerCity;
     }
         else{
             alert ("La ciudad que ha ingresado no existe. Le recordamos que brindamos nuestros servicios a las siguientes ciudades: " + listCities());
-            searchcities = prompt("Ingrese una ciudad valida")
-            return this.searchCity(searchcities);            
+            searchCities = prompt("Ingrese una ciudad válida")
+            return this.searchCity(searchCities);            
         }
 }
 
