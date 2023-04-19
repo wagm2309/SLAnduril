@@ -1,7 +1,7 @@
 //Este array va a contener la(s) cotizacione(s) que genere el usuario
 let myQuotes = [];
 
-let searchCities = ""
+let searchCities = "";
 const lowPrice = "300 pesos";
 const mediumPrice = "600 pesos";
 const maxPrice = "1000 pesos";
@@ -69,12 +69,12 @@ function dataCustomer() {
 
 //Función que permite solicitar los datos del cliente y realizar una cotización
 function newQuote() {
-    searchCities = prompt("A cotinuación ingrese la ciudad desde donde se enviará el producto: " + listCities()); 
+    searchCities = prompt("A cotinuación ingrese la ciudad desde donde se enviará el producto: " + listCities());
     let originCity = this.searchCity(searchCities);
     let originStreet = prompt("Ingrese calle desde donde se enviará el producto");
     let originStreetNumber = prompt("Ingrese numero de calle desde donde se enviará el producto");
     let originPostalCode = prompt("Ingrese codigo postal desde donde se enviará el producto");
-    searchCities = prompt("Ingrese ciudad a donde se enviará el producto " + listCities()); 
+    searchCities = prompt("Ingrese ciudad a donde se enviará el producto " + listCities());
     let destinationCity = this.searchCity(searchCities);
     let destinationStreet = prompt("Ingrese calle de destino del producto");
     let destinationStreetNumber = prompt("Ingrese numero de calle de destino del producto");
@@ -112,21 +112,21 @@ function newQuote() {
 
 
 //Función que permite buscar la ciudad introducida por el usuario
-function searchCity (searchCity){
+function searchCity(searchCity) {
     let city = CITIES.find((oneCity) => oneCity.name === searchCity.toUpperCase());
-    if(city){
+    if (city) {
         let customerCity = city.name;
         return customerCity;
     }
-        else{
-            alert ("La ciudad que ha ingresado no existe. Le recordamos que brindamos nuestros servicios a las siguientes ciudades: " + listCities());
-            searchCities = prompt("Ingrese una ciudad válida")
-            return this.searchCity(searchCities);            
-        }
+    else {
+        alert("La ciudad que ha ingresado no existe. Le recordamos que brindamos nuestros servicios a las siguientes ciudades: " + listCities());
+        searchCities = prompt("Ingrese una ciudad válida");
+        return this.searchCity(searchCities);
+    }
 }
 
 //Función que muestra listado de paises en los que se brinda servicio
-function listCities(){
+function listCities() {
     const newCities = CITIES.map((el) => el.name);
     let joinCities = newCities.join(" // ");
     return joinCities;
@@ -157,4 +157,4 @@ alert("Esta pagina aún se encuentra en construcción");
 //Función que le indica al cliente las opciones que puede utilizar
 dataCustomer();
 
-alert("Muchas gracias por usar nuestros servicios. Hasta luego.")
+alert("Muchas gracias por usar nuestros servicios. Hasta luego.");
