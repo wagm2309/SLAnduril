@@ -1,0 +1,1 @@
+// Pronto se desarrollaran funcionalidades en JS para el Main
