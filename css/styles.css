@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Eagle Lake", cursive;
+  background-color: #b8b8b8;
+}
+
+/************ CSS HEADER ************/
+
+li {
+  border-bottom: 1px solid rgb(58, 50, 50);
+}
+
+#nav-title {
+  margin-inline-start: auto;
+  text-align: center;
+}
+
+/************ CSS MAIN ************/
+main {
+  margin-top: 120px;
+  padding: 10 10 10 10;
+}
+
+.page-title-custom {
+  padding: auto;
+  margin: 1%;
+}
+
+.text__page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: auto;
+  text-align: center;
+  margin: auto;
+  color: black;
+}
+
+.page-subtitle-custom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: auto;
+  text-align: center;
+  margin: auto;
+  color: black;
+}
+
+.article__div {
+  color: black;
+  margin: 1%;
+  padding: auto;
+}
+
+.section-custom {
+  padding: auto;
+}
+
+.article-custom {
+  padding: 10 0 0 0;
+  margin: 1%;
+}
+
+.article-text-custom {
+  padding: auto;
+  text-align: justify;
+  margin: 1%;
+  color: black;
+}
+
+.article-title-custom {
+  padding: 50 0 0 0;
+  color: black;
+}
+
+.image-custom {
+  border-radius: 10%;
+  margin: 30px;
+  padding: auto;
+  object-fit: cover;
+  width: 25%;
+}
+
+/************ CSS FOOTER ************/
+.footer-custom {
+  display: block;
+  flex-direction: row;
+  padding: auto;
+  margin-top: 1%;
+  justify-content: center;
+}
+
+footer,
+#footer-title-custom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: auto;
+  margin: auto;
+  color: black;
+  font-size: large;
+}
+
+.social-custom:hover {
+  transform: translateY(-5px);
+  transition: all 0.6s ease;
+}
+
+div,
+.social-custom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: auto;
+  text-align: center;
+  margin: auto;
+}
+
+.image-social-custom {
+  border-radius: 16%;
+  margin: 10%;
+  max-width: 60%;
+  max-height: 50%;
+  padding: auto;
+  object-fit: cover;
+  height: 30%;
+  width: 40%;
+}
+
+/******MODIFICACIONES DE CLASE DE BOOTSTRAP */
+.bg-dark-custom {
+  background-color: black;
+}
+
+.text-bg-dark-custom {
+  background-color: black;
+  color: #fff;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: xx-large;
+}
+
+.navbar-brand:hover {
+  transform: translateY(5px);
+  transition: all 0.6s ease;
+  color: #788585;
+}
+
+.navbar-toggler {
+  background-color: #788585;
+}
+
+.navbar-toggler:hover {
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+.data-custom {
+  margin-block: 5%;
+}
+
+.form-control {
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+.form-select {
+  margin-left: 3px;
+}
+
+.btn-primary {
+  margin-block-end: 5%;
+  margin-block-start: auto;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-primary:hover {
+  background-color: rgb(65, 64, 64);
+  border-color: rgb(65, 64, 64);
+  --bs-btn-active-bg: rgb(65, 64, 64);
+  --bs-btn-active-border-color: rgb(65, 64, 64);
+  transform: translateY(-5px);
+  transition: all 0.6s ease;
+}
+
+.table-custom {
+  margin-left: 125px;
+  width: 85%;
+}
+
+.btn-outline-success {
+  --bs-btn-color: white;
+  --bs-btn-border-color: white;
+  --bs-btn-hover-border-color: rgb(65, 64, 64);
+  --bs-btn-hover-bg: rgb(65, 64, 64);
+  --bs-btn-disabled-border-color: rgb(105, 153, 179);
+  --bs-btn-active-bg: rgb(105, 153, 179);
+  --bs-btn-active-border-color: rgb(105, 153, 179);
+}
+
+/******MODIFICACIONES DE ESTILOS DE SWAL MODAL */
+
+.swal-modal {
+  margin: auto;
+}
+
+.swal-button {
+  background-color: black;
+}
