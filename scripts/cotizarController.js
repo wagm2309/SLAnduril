@@ -163,11 +163,11 @@ function validateForm(event) {
     originStreet === "" ||
     originStreetNumber === "" ||
     originPostalCode === "" ||
-    originCity === "" ||
+    document.getElementById("select-origin-city").value === "" ||
     destinationStreet === "" ||
     destinationStreetNumber === "" ||
     destinationPostalCode === "" ||
-    destinationCity === "" ||
+    document.getElementById("select-destination-city").value === "" ||
     nameProduct === ""
   ) {
     sweetAlert(
