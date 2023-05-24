@@ -23,3 +23,12 @@ uso de esta función, acoplandola a mi poyecto.
 - Hago uso de la libreria SweetAlert para el manejo de los mensajes que arroja la aplicación
 - A futuro, se implementará un buscador de cotizaciones. En el main se construirá un carousel de imagenes y se agregará mas info para uso del cliente.
 
+CUARTA ENTREGA (Entrega final)
+
+* Se continua trabajando con la libreria Sweet Alert, para generar las alertas del sistema
+* Se simula conexión a una API, aplicando Fetch con un archivo .json. Acá se trabaja con promesas, se aplica Then, Catch y Asyn.
+* Por medio de esta simulacón de conexión a una API; se cargan los paises en los que el SL brinda servicios, en el main. Ademas en los selectores, se cargan estas ciudades por medios de un llamado en esta simulación de conexión a API.
+* Se agrega nueva pagina en la que el usuario puede generar envíos
+* Se constuyen buscadores para cotizaciones y para envíos
+* Se mejora todo el codigo implementado
+
